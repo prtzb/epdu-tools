@@ -1,0 +1,2027 @@
+[
+    {
+        "object": "System.Bootloader.iVersion",
+        "access_right": "admin",
+        "obj_type": "String:15",
+        "read": "RO",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Bootloader.Mode",
+        "access_right": "superadmin",
+        "obj_type": "BootMode",
+        "read": "RW",
+        "description": [
+            "Normal ",
+            "Upgrade ",
+            "Passthru ",
+            "ATE ",
+            "Bootstrap"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Contact",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.DaisyChain.Count",
+        "access_right": "admin",
+        "obj_type": "Integer0to65535",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "3"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.DaisyChain.DeviceId",
+        "access_right": "admin",
+        "obj_type": "DaisyChainDeviceId",
+        "read": "RW",
+        "description": [
+            "Host ",
+            "Device 1 ",
+            "Device 2 ",
+            "Device 3"
+        ],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.DaisyChain.Position",
+        "access_right": "admin",
+        "obj_type": "DaisyChainPosition",
+        "read": "RW",
+        "description": [
+            "Middle ",
+            "End"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.DaisyChain.Statistic",
+        "access_right": "admin",
+        "obj_type": "String:127",
+        "read": "RO",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.DaisyChain.Status",
+        "access_right": "admin",
+        "obj_type": "DaisyChainStatus",
+        "read": "RO",
+        "description": [
+            "No Communication ",
+            "Communication OK ",
+            "Communication failed ",
+            "Host conflict ",
+            "Device conflict"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.DaisyChain[x].DeviceId",
+        "access_right": "admin",
+        "obj_type": "DaisyChainDeviceId",
+        "read": "RO",
+        "description": [
+            "Host ",
+            "Device 1 ",
+            "Device 2 ",
+            "Device 3"
+        ],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.DaisyChain[x].MacAddress",
+        "access_right": "admin",
+        "obj_type": "String:17",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "00:00:00:00:00:00"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.DaisyChain[x].Position",
+        "access_right": "admin",
+        "obj_type": "DaisyChainPosition",
+        "read": "RO",
+        "description": [
+            "Middle ",
+            "End"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.DaisyChain[x].Status",
+        "access_right": "admin",
+        "obj_type": "DaisyChainStatus",
+        "read": "RO",
+        "description": [
+            "No Communication ",
+            "Communication OK ",
+            "Communication failed ",
+            "Host conflict(not implemented) ",
+            "Device conflict"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Display.Contrast",
+        "access_right": "admin",
+        "obj_type": "Integer25to45",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "32"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Display.Language",
+        "access_right": "superadmin",
+        "obj_type": "DisplayLanguage",
+        "read": "RW",
+        "description": [
+            "English ",
+            "French ",
+            "German ",
+            "Spanish ",
+            "Russian ",
+            "Portuguese ",
+            "Italian"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Display.LcdRotation",
+        "access_right": "admin",
+        "obj_type": "LcdRotation",
+        "read": "RW",
+        "description": [
+            "Rotation 0 Deg(0U) ",
+            "Rotation 90 Deg(1U) ",
+            "Rotation 180 Deg(0U) ",
+            "Rotation 270 Deg(1U)"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Display.Password",
+        "access_right": "superadmin",
+        "obj_type": "Password:4",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "1234"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Display.Password.IsEnable",
+        "access_right": "superadmin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.EepromBackup.Reset",
+        "access_right": "superadmin",
+        "obj_type": "ControlState",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email.Count",
+        "access_right": "admin",
+        "obj_type": "Integer0to65535",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "9"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email.Sender",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "PDU@Eaton.com"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email[x].Description",
+        "access_right": "admin",
+        "obj_type": "String:63",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email[x].EventList.All",
+        "access_right": "admin",
+        "obj_type": "EventType",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email[x].Events.Log",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email[x].Recipient",
+        "access_right": "admin",
+        "obj_type": "String:127",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "email1@recipient.com",
+            "email2@recipient.com",
+            "email3@recipient.com",
+            "email4@recipient.com",
+            "email5@recipient.com",
+            "email6@recipient.com",
+            "email7@recipient.com",
+            "email8@recipient.com",
+            "email9@recipient.com"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email[x].Report.Hour",
+        "access_right": "admin",
+        "obj_type": "Time0to23hours",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email[x].Report.Next",
+        "access_right": "admin",
+        "obj_type": "Time0to31days",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email[x].Report.Periodicity",
+        "access_right": "admin",
+        "obj_type": "Time0to28days",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email[x].Selected",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [
+            "Disabled ",
+            "Enabled"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Email[x].Test",
+        "access_right": "admin",
+        "obj_type": "Boolean",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Ethernet.iSerialNumber",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RO",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Ethernet.iVersion",
+        "access_right": "admin",
+        "obj_type": "String:15",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "01.00.0031"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Ethernet.MacAddress",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "00:00:00:00:00:00"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Ethernet.Mode",
+        "access_right": "admin",
+        "obj_type": "EthMode",
+        "read": "RW",
+        "description": [
+            "Auto Negotiation ",
+            "100 Mbps Full Duplex ",
+            "100 Mbps Half Duplex ",
+            "10 Mbps Full Duplex ",
+            "10 Mbps Half Duplex"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.FactoryReset",
+        "access_right": "admin",
+        "obj_type": "Boolean",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.FirmwareUpgrade",
+        "access_right": "admin",
+        "obj_type": "Boolean",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.FirmwareUpgradeMode",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.FormatFS",
+        "access_right": "superadmin",
+        "obj_type": "ControlState",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.KeepDC",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.KeepIP",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Language",
+        "access_right": "admin",
+        "obj_type": "Language",
+        "read": "RW",
+        "description": [
+            "English(ENG) ",
+            "French(FRE) ",
+            "Spanish(SPA) ",
+            "German(GER) ",
+            "Italian(ITA) ",
+            "Chinese Simplified(CHI) ",
+            "Japanase(JPN) ",
+            "Korean(KOR) 10",
+            "Chinese Traditionnal(CHT) 11",
+            "Russian(RUS) 12",
+            "Portuguese(POR) 13",
+            "Czech(CZE) 14",
+            "Polish(POL)"
+        ],
+        "default": [
+            "2"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Location",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Login",
+        "access_right": "superadmin",
+        "obj_type": "String:31",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "admin"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.LogReset",
+        "access_right": "admin",
+        "obj_type": "Boolean",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Authentication.AuthMethod",
+        "access_right": "admin",
+        "obj_type": "AuthMethod",
+        "read": "RW",
+        "description": [
+            "Local Authentication ",
+            "LDAP Authentication ",
+            "Radius Authentication"
+        ],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Authentication.AuthOrder",
+        "access_right": "admin",
+        "obj_type": "AuthOrder",
+        "read": "RW",
+        "description": [
+            "Local ",
+            "External then Local ",
+            "Local then External ",
+            "External"
+        ],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Authentication.MaxSessionTime",
+        "access_right": "admin",
+        "obj_type": "Integer0to42949672",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "1800"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Authentication.SessionTime",
+        "access_right": "admin",
+        "obj_type": "Integer0to42949672",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "300"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.DHCP",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.DomainName",
+        "access_right": "admin",
+        "obj_type": "String:63",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "pdu.domain.com"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.EnergyWise.Cmd",
+        "access_right": "admin",
+        "obj_type": "EnergyWiseCmd",
+        "read": "WO",
+        "description": [
+            "Start ",
+            "Stop ",
+            "Restart"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.Domain",
+        "access_right": "admin",
+        "obj_type": "String:63",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "MyDomain"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.Enable",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [
+            "isable ",
+            "nable"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.ListenPort",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "48296"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.RemotePort",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "43440"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.SdkVersion",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "RELEASE1.2.0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.Secret",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.SecretKey",
+        "access_right": "admin",
+        "obj_type": "Password:63",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.SeqId",
+        "access_right": "admin",
+        "obj_type": "Integer0to42949672",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.State",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RO",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.EnergyWise.ThresholdLevel",
+        "access_right": "admin",
+        "obj_type": "Integer0to10",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "4"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.FTP.Access",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.HostName",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "ePDU$x"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.HTTP.Access",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.HTTP.Port",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "80"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.HTTPS.KeySize",
+        "access_right": "admin",
+        "obj_type": "SslKeySize",
+        "read": "RW",
+        "description": [
+            "1024 bits ",
+            "2048 bits"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.HTTPS.Port",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "443"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.IPAddress",
+        "access_right": "admin",
+        "obj_type": "IPv4",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "192.168.123.123"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.IPGateway",
+        "access_right": "admin",
+        "obj_type": "IPv4",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.IPMask",
+        "access_right": "admin",
+        "obj_type": "IPv4",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "255.255.0.0"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.IPv6Address1",
+        "access_right": "admin",
+        "obj_type": "IPv6",
+        "read": "WO",
+        "description": [],
+        "default": [],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.IPv6Address2",
+        "access_right": "admin",
+        "obj_type": "IPv6",
+        "read": "RO",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.IPv6AutoConfig",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.IPv6DefaultGateway",
+        "access_right": "admin",
+        "obj_type": "IPv6",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.IPv6Enable",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.IPv6LocalAddress",
+        "access_right": "admin",
+        "obj_type": "IPv6",
+        "read": "RO",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.IPv6Status",
+        "access_right": "admin",
+        "obj_type": "NetworkIpv6Status",
+        "read": "RO",
+        "description": [
+            "Invalid ",
+            "Valid ",
+            "Manual Configuration"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.AuthMechanism",
+        "access_right": "admin",
+        "obj_type": "LdapAuthMechanis",
+        "read": "RW",
+        "description": [
+            "imple ",
+            "Digest MD5"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.CheckServerCertificat",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.GroupSearch.AuthzMode",
+        "access_right": "admin",
+        "obj_type": "LdapAuthorizationM",
+        "read": "RW",
+        "description": [
+            "No Authz ",
+            "By User Attribut ",
+            "By Group"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.GroupSearch.BaseDn",
+        "access_right": "admin",
+        "obj_type": "String:249",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.GroupSearch.UPSGroupNameAttr",
+        "access_right": "admin",
+        "obj_type": "String:49",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.GroupSearch.UserNameAttr",
+        "access_right": "admin",
+        "obj_type": "String:49",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.SearchMode",
+        "access_right": "admin",
+        "obj_type": "LdapSearchMode",
+        "read": "RW",
+        "description": [
+            "Anonymous Search ",
+            "User Bind Search"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.SearchUser",
+        "access_right": "admin",
+        "obj_type": "String:249",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.SearchUserPassword",
+        "access_right": "admin",
+        "obj_type": "Password:49",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.Server.Count",
+        "access_right": "admin",
+        "obj_type": "Integer0to10",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "2"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.Server[x].IsEnable",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.Server[x].Port",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "389"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.Server[x].ServerName",
+        "access_right": "admin",
+        "obj_type": "String:49",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "LDAPServer1",
+            "LDAPServer2"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.Server[x].TimeOut",
+        "access_right": "admin",
+        "obj_type": "Integer0to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "10"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.ServerType",
+        "access_right": "admin",
+        "obj_type": "LdapServerType",
+        "read": "RW",
+        "description": [
+            "Generic LDAP server ",
+            "Active Directory"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.SSLMode",
+        "access_right": "admin",
+        "obj_type": "LdapSSLMode",
+        "read": "RW",
+        "description": [
+            "o SSL ",
+            "SSL (LDAPS) ",
+            "SSL (Start TLS)"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.UserSearch.Attribute",
+        "access_right": "admin",
+        "obj_type": "String:49",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.UserSearch.BaseDn",
+        "access_right": "admin",
+        "obj_type": "String:249",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Ldap.UserSearch.Object",
+        "access_right": "admin",
+        "obj_type": "String:49",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.PrefixLength1",
+        "access_right": "admin",
+        "obj_type": "Integer0to128",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.PrefixLength2",
+        "access_right": "admin",
+        "obj_type": "Integer0to128",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.PrimaryDNS",
+        "access_right": "admin",
+        "obj_type": "IPv4",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.Radius.AuthType",
+        "access_right": "admin",
+        "obj_type": "RadiusAuthType",
+        "read": "RW",
+        "description": [
+            "PAP ",
+            "CHAP"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Radius.Server.Count",
+        "access_right": "admin",
+        "obj_type": "Integer0to10",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "2"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Radius.Server[x].IsEnable",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Radius.Server[x].NasIdentiferType",
+        "access_right": "admin",
+        "obj_type": "NasIdentifierType",
+        "read": "RW",
+        "description": [
+            "IDENTIFER_IPV4 ",
+            "IDENTIFER_IPV6_1 ",
+            "IDENTIFER_IPV6_2 ",
+            "IDENTIFER_IPV6_LOCAL"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Radius.Server[x].Port",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "1812"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Radius.Server[x].Retry",
+        "access_right": "admin",
+        "obj_type": "Integer0to255",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "3"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Radius.Server[x].ServerName",
+        "access_right": "admin",
+        "obj_type": "String:48",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "RADIUSServer1",
+            "RADIUSServer2"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Radius.Server[x].SharedSecret",
+        "access_right": "admin",
+        "obj_type": "Password:48",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Radius.Server[x].Timeout",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "5"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SecondaryDNS",
+        "access_right": "admin",
+        "obj_type": "IPv4",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.SmtpServer.Authentication",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SmtpServer.HostName",
+        "access_right": "admin",
+        "obj_type": "String:63",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SmtpServer.Login",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SmtpServer.Password",
+        "access_right": "admin",
+        "obj_type": "Password:31",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SmtpServer.Port",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "25"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.Port",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "161"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.snmpVersion",
+        "access_right": "admin",
+        "obj_type": "SNMPVersion",
+        "read": "RW",
+        "description": [
+            "disabled ",
+            "SNMP V1 ",
+            "SNMP V3 ",
+            "SNMP V1&V3"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.TrapPort",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "162"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.V1.User.Count",
+        "access_right": "admin",
+        "obj_type": "Integer0to65535",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "SNMPV1_NBCOMMUNITIES"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.V1.User[x].SecurityRight",
+        "access_right": "admin",
+        "obj_type": "Snmpv3VacmSecurit",
+        "read": "RW",
+        "description": [
+            "No Access ",
+            "Read-Only ",
+            "Read/Write"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.V1.User[x].UserName",
+        "access_right": "admin",
+        "obj_type": "String:24",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "public",
+            "private"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.V3.User.Count",
+        "access_right": "admin",
+        "obj_type": "Integer0to65535",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "SNMPV3_USM_NBUSERS"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.V3.User[x].Name",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "SNMPv3User1",
+            "SNMPv3User2",
+            "SNMPv3User3",
+            "SNMPv3User4"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.V3.User[x].Password",
+        "access_right": "admin",
+        "obj_type": "Password:24",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "",
+            ""
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.V3.User[x].PrivacyKey",
+        "access_right": "admin",
+        "obj_type": "Password:24",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "",
+            ""
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.V3.User[x].SecurityLevel",
+        "access_right": "admin",
+        "obj_type": "Snmpv3UsmLevel",
+        "read": "RW",
+        "description": [
+            "Not Set ",
+            "No Auth No Priv ",
+            "Auth No Priv ",
+            "Auth Priv"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SNMP.V3.User[x].SecurityRight",
+        "access_right": "admin",
+        "obj_type": "Snmpv3VacmSecurit",
+        "read": "RW",
+        "description": [
+            "No Access ",
+            "Read-Only ",
+            "Read/Write"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.SSH.Port",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "22"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.Syslog.Server.Count",
+        "access_right": "admin",
+        "obj_type": "Integer0to10",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "2"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Syslog.Server[x].BOM",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Syslog.Server[x].Facility",
+        "access_right": "admin",
+        "obj_type": "SyslogFacility",
+        "read": "RW",
+        "description": [
+            "kernel messages ",
+            "user-level messages ",
+            "mail system ",
+            "system daemons ",
+            "security/authorization messages ",
+            "messages generated internally by syslogd ",
+            "line printer subsystem ",
+            "network news subsystem ",
+            "UUCP subsystem ",
+            "clock daemon 1",
+            "security/authorization messages 1",
+            "FTP daemon 1",
+            "NTP subsystem 1",
+            "log audit 1",
+            "log alert 1",
+            "clock daemon (note 2) 1",
+            "local use 0 (local0) 1",
+            "local use 1 (local1) 1",
+            "local use 2 (local2) 1",
+            "local use 3 (local3) 2",
+            "local use 4 (local4) 2",
+            "local use 5 (local5) 2",
+            "local use 6 (local6) 2",
+            "local use 7 (local7)"
+        ],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Syslog.Server[x].IsEnable",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Syslog.Server[x].MessageTransfer",
+        "access_right": "admin",
+        "obj_type": "SyslogMessageTran",
+        "read": "RW",
+        "description": [
+            "Octet Counting ",
+            "Non Transparent Framing"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Syslog.Server[x].Port",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "514"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Syslog.Server[x].Protocol",
+        "access_right": "admin",
+        "obj_type": "SyslogProtocol",
+        "read": "RW",
+        "description": [
+            "UDP ",
+            "TCP"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Syslog.Server[x].ServerName",
+        "access_right": "admin",
+        "obj_type": "String:49",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "SyslogServer1",
+            "SyslogServer2"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Syslog.Server[x].Test",
+        "access_right": "admin",
+        "obj_type": "Boolean",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Network.Telnet.Access",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.Telnet.Port",
+        "access_right": "admin",
+        "obj_type": "Integer1to65535",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "23"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Network.Telnet.Security",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.NetworkManagementSystem.Count",
+        "access_right": "pdu",
+        "obj_type": "Integer0to65535",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "NB_TRAP_RECEIVERS"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.NetworkManagementSystem[x].EventList.All",
+        "access_right": "pdu",
+        "obj_type": "EventType",
+        "read": "RW",
+        "description": [
+            "None ",
+            "All Alarms"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.NetworkManagementSystem[x].HostName",
+        "access_right": "pdu",
+        "obj_type": "String:63",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.NetworkManagementSystem[x].Name",
+        "access_right": "pdu",
+        "obj_type": "String:31",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "TrapReceiver1",
+            "TrapReceiver2",
+            "TrapReceiver3",
+            "TrapReceiver4",
+            "TrapReceiver5",
+            "TrapReceiver6",
+            "TrapReceiver7",
+            "TrapReceiver8"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.NetworkManagementSystem[x].Test",
+        "access_right": "pdu",
+        "obj_type": "Boolean",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.NetworkManagementSystem[x].TrapCommunity",
+        "access_right": "pdu",
+        "obj_type": "String:24",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "public",
+            "public",
+            "public",
+            "public",
+            "public",
+            "public",
+            "public",
+            "public"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.NetworkManagementSystem[x].TrapSnmpVersion",
+        "access_right": "pdu",
+        "obj_type": "TrapSNMPVersion",
+        "read": "RW",
+        "description": [
+            "Disabled ",
+            "SNMP V1 ",
+            "SNMP V3"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Password",
+        "access_right": "superadmin",
+        "obj_type": "Password:15",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "admin"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Restart",
+        "access_right": "admin",
+        "obj_type": "Boolean",
+        "read": "WO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Security",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "True"
+    },
+    {
+        "object": "System.Slip.Statistic",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RO",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Temperature.Unit",
+        "access_right": "admin",
+        "obj_type": "TemperatureUnit",
+        "read": "RW",
+        "description": [
+            "\u00b0C ",
+            "\u00b0F"
+        ],
+        "default": [
+            "1"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.Time",
+        "access_right": "admin",
+        "obj_type": "Time0to136years",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.TimeDaylight",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.TimeFormat",
+        "access_right": "admin",
+        "obj_type": "DateTimeFormat",
+        "read": "RW",
+        "description": [
+            "mm/dd/yyyy ",
+            "dd/mm/yyyy ",
+            "yyyy-mm-dd ",
+            "dd mm yyyy"
+        ],
+        "default": [
+            "2"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.TimeNtp",
+        "access_right": "admin",
+        "obj_type": "String:63",
+        "read": "RW",
+        "description": [],
+        "default": [],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.TimeSync",
+        "access_right": "admin",
+        "obj_type": "DateTimeSource",
+        "read": "RW",
+        "description": [
+            "Manual ",
+            "Sync NTP"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.TimeUp",
+        "access_right": "admin",
+        "obj_type": "Time0to136years",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.TimeZone",
+        "access_right": "admin",
+        "obj_type": "DateTimeTimeZone",
+        "read": "RW",
+        "description": [
+            "43200",
+            "-39600",
+            "-36000",
+            "-32400",
+            "-28800",
+            "-25200",
+            "-21600",
+            "-18000",
+            "-16200",
+            "-14400",
+            "-12600",
+            "-10800",
+            "-7200",
+            "- 3600",
+            "0",
+            "3600",
+            "7200",
+            "10800",
+            "12600",
+            "14400",
+            "16200",
+            "18000",
+            "19800",
+            "21600",
+            "23400",
+            "25200",
+            "28800",
+            "32400",
+            "34200",
+            "36000",
+            " 39600",
+            "43200"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.User.Count",
+        "access_right": "admin",
+        "obj_type": "Integer0to65535",
+        "read": "RO",
+        "description": [],
+        "default": [
+            "8"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.User[x].Login",
+        "access_right": "admin",
+        "obj_type": "String:31",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "Account1",
+            "Account2",
+            "Account3",
+            "Account4",
+            "Account5",
+            "Account6",
+            "Account7",
+            "Account8"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.User[x].Password",
+        "access_right": "admin",
+        "obj_type": "Password:15",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.User[x].Profile",
+        "access_right": "admin",
+        "obj_type": "MultiUserProfile",
+        "read": "RW",
+        "description": [
+            "superadmin ",
+            "admin ",
+            "ePDU User ",
+            "Outlet User"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.User[x].SecurityRight",
+        "access_right": "admin",
+        "obj_type": "MultiUserAccess",
+        "read": "RW",
+        "description": [
+            "No Access ",
+            "Read-Only ",
+            "Read/Write"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.User[x].Status",
+        "access_right": "admin",
+        "obj_type": "ControlState",
+        "read": "RW",
+        "description": [],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    },
+    {
+        "object": "System.User[x].Type",
+        "access_right": "admin",
+        "obj_type": "MultiUserType",
+        "read": "RW",
+        "description": [
+            "local ",
+            "remote"
+        ],
+        "default": [
+            "0"
+        ],
+        "reboot_needed": "False"
+    }
+]
